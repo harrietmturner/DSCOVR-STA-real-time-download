@@ -5,7 +5,7 @@ import os
 import cdflib
 from datetime import datetime, timedelta
 import pandas as pd
-from Data_download import useful_functions as f
+from Code import useful_functions as f
 import numpy as np
 from timeit import default_timer as timer
 
@@ -268,9 +268,6 @@ def stereoa_real_time_obs(start_date, end_date, directory):
     print(timer_end - timer_start, 'seconds to download and format STEREO-A data.')
 
 
-if __name__ == '__main__':
-    stereoa_real_time_obs(datetime(2023, 7, 15),
-                          datetime(2023, 7, 20),
-                          'D:\\PhD\\Real_time_data_download\\Data')
+
 
 
